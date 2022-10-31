@@ -16,12 +16,13 @@ export function Portifolio() {
         <FrontCover>
           <div className="frontCoverContainerBouthSides">
             <div className="leftSideText">
-              <div class="animate__animated animate__fadeInDown">
-                <h1>Tiago Santos</h1>
-                <div class="animate__animated animate__fadeInDown animate__delay-2s">
-                  <h2>Web developer</h2>
-                </div>
-              </div>
+              <h1 class="animate__animated animate__fadeInDown animate__slow	1s ">
+                Tiago Santos
+              </h1>
+
+              <h2 class="animate__animated animate__fadeInLeft animate__delay-2s ">
+                Web developer
+              </h2>
             </div>
             <div className="socialMediasIconsLink">
               <a
