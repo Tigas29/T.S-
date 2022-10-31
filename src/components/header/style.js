@@ -1,8 +1,6 @@
 import styled, { css } from "styled-components/";
 const Media = {
-  Laptop: "@media(max-width:1220px)",
   Nav: "@media(max-width:1000px)",
-  Tablet: "@media(max-width:1000px)",
   PhoneLarge: "@media(max-width:600px)",
 };
 export const HeaderContainer = styled.header`
