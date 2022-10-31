@@ -29,11 +29,30 @@ export function Header() {
               onClick={() => setMenuIsVisible(false)}
               className="menu closeMenu"
             />
-
             <li className="menuSide">
-              <ul className="Options">console.log("tiagoSantos")</ul>
-              <ul className="Options">aboutMe</ul>
-              <ul className="Options">works</ul>
+              <Link to="">
+                <ul
+                  className={`${
+                    path === "/home" ? " color Options" : "Options"
+                  }`}
+                >
+                  console.log("tiagoSantos")
+                </ul>
+              </Link>
+              <Link to="">
+                <ul
+                  className={`${path === "/" ? " color Options" : "Options"}`}
+                >
+                  aboutMe
+                </ul>
+              </Link>
+              <Link to="">
+                <ul
+                  className={`${path === "/" ? " color Options" : "Options"}`}
+                >
+                  works
+                </ul>
+              </Link>
             </li>
           </div>
         </div>

@@ -9,12 +9,15 @@ export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 99;
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    #0f0f12 26.43%,
-    rgba(15, 15, 17, 0) 73.78%
-  );
   .header {
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      #0f0f12 26.43%,
+      rgba(15, 15, 17, 0) 73.78%
+    );
+    z-index: -2;
     .content {
       display: flex;
       align-items: center;
@@ -33,22 +36,22 @@ export const HeaderContainer = styled.header`
           width: 3em;
           height: 3em;
           color: #f0f0f0;
-          transition: all 0.5s linear 0.1s;
           opacity: 1;
+          transition: all 0.5s linear 0.1s;
           ${({ isVisible }) =>
             isVisible &&
             css`
               opacity: 0;
+              transition: all 0.5s linear 0.1s;
             `}
         }
       }
       .closeMenu {
         position: absolute;
         opacity: 0;
-        /* display: none; */
         z-index: -1;
-        right: 25px;
-        transition: all 0.1s linear 0.3s;
+        right: 5%;
+        transition: all 0.1s linear;
 
         ${Media.Nav} {
           ${({ isVisible }) =>
@@ -56,7 +59,6 @@ export const HeaderContainer = styled.header`
             css`
               z-index: 0;
               opacity: 1;
-              display: block;
             `}
         }
       }
@@ -73,11 +75,11 @@ export const HeaderContainer = styled.header`
           width: 90vw;
           padding: 8rem 0 0;
           z-index: -2;
-          transition: margin-left 1s cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
           gap: 50px;
           ${({ isVisible }) =>
             isVisible &&
             css`
+              transition: margin-left 1s cubic-bezier(0.65, 0.05, 0.36, 1) 0.1s;
               margin-left: 1px;
             `}
         }
@@ -97,6 +99,7 @@ export const HeaderContainer = styled.header`
             font-weight: 400;
             transition: all 0.2s linear;
           }
+
           ${Media.Nav} {
             font-size: 2rem;
             font-weight: 400;
@@ -107,6 +110,9 @@ export const HeaderContainer = styled.header`
           ${Media.PhoneLarge} {
             font-size: 1rem;
           }
+        }
+        .color {
+          color: #985eff;
         }
       }
     }
