@@ -6,7 +6,7 @@ import "animate.css";
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiOutlineInstagram,
+  AiOutlineBehanceSquare,
 } from "react-icons/ai";
 export function Portifolio() {
   return (
@@ -37,11 +37,8 @@ export function Portifolio() {
               >
                 <AiFillGithub className="iconsMedia" />
               </a>
-              <a
-                href="https://www.instagram.com/_santostiagoo/"
-                target="blanked"
-              >
-                <AiOutlineInstagram className="iconsMedia" />
+              <a href="https://www.behance.net/tiagosantos67" target="blanked">
+                <AiOutlineBehanceSquare className="iconsMedia" />
               </a>
             </div>
           </div>
