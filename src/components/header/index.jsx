@@ -39,7 +39,7 @@ export function Header() {
                   console.log("tiagoSantos")
                 </ul>
               </Link>
-              {/* <Link to="">
+              <Link to="">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
@@ -52,7 +52,7 @@ export function Header() {
                 >
                   works
                 </ul>
-              </Link> */}
+              </Link>
             </li>
           </div>
         </div>

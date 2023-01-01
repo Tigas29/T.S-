@@ -1,50 +1,25 @@
-import { Container, FrontCover } from "./style";
-// import { Link } from "react-router-dom";
-import "animate.css";
-import { Header } from "../../components/header/index";
-import "animate.css";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineBehanceSquare,
-} from "react-icons/ai";
+import { Header } from "../../components/header/index.jsx";
+import { Container, ConfigSize } from "./style";
+import { StoryFirstPart } from "../../components/StoryPart1/index.jsx";
+import { FrontCover } from "../../components/HomeFrontCover/index.jsx";
+import { StorySecondPart } from "../../components/StoryPart2/index";
+import { StoryThirdPart } from "../../components/StoryPart3/index";
+import { StoryFourthPart } from "../../components/StoryPart4/index";
+import { StoryFifthPart } from "../../components/StoryPart5/index";
 export function Portifolio() {
   return (
-    <>
+    <div>
       <Header />
       <Container>
-        <FrontCover>
-          <div className="frontCoverContainerBouthSides">
-            <div className="leftSideText">
-              <h1 class="animate__animated animate__fadeInDown animate__slow	1s ">
-                Tiago Santos
-              </h1>
-
-              <h2 class="animate__animated animate__fadeInLeft animate__delay-2s ">
-                Web developer
-              </h2>
-            </div>
-            <div className="socialMediasIconsLink">
-              <a
-                href="https://www.linkedin.com/in/tiagosantos-dev/"
-                target="blanked"
-              >
-                <AiFillLinkedin className="iconsMedia" />
-              </a>
-              <a
-                href="https://github.com/Tigas29?tab=repositories"
-                target="blanked"
-              >
-                <AiFillGithub className="iconsMedia" />
-              </a>
-              <a href="https://www.behance.net/tiagosantos67" target="blanked">
-                <AiOutlineBehanceSquare className="iconsMedia" />
-              </a>
-            </div>
-          </div>
-          {/* <span className="scrolldownButton">Scroll dowm</span> */}
-        </FrontCover>
+        <ConfigSize>
+          <FrontCover />
+          <StoryFirstPart />
+          <StorySecondPart />
+          <StoryThirdPart />
+          <StoryFourthPart />
+          <StoryFifthPart />
+        </ConfigSize>
       </Container>
-    </>
+    </div>
   );
 }
