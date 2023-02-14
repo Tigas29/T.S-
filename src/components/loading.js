@@ -10,7 +10,7 @@ const LOADING = styled.div`
   height: 100vh;
   background-color: #393939;
   position: fixed;
-  z-index: 9999999999999999999999999;
+  z-index: 99999999999999999999999;
 `;
 
 export default function Loading() {
