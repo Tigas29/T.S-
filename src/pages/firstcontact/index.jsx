@@ -3,7 +3,7 @@ import { Container } from "./style";
 import logo from "../../imgs/Logo.svg";
 import { Link } from "react-router-dom";
 import "animate.css";
-export function FirstContact() {
+export default function FirstContact() {
   return (
     <>
       <Container>

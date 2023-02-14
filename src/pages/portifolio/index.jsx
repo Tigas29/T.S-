@@ -6,7 +6,7 @@ import { StorySecondPart } from "../../components/StoryPart2/index";
 import { StoryThirdPart } from "../../components/StoryPart3/index";
 import { StoryFourthPart } from "../../components/StoryPart4/index";
 import { StoryFifthPart } from "../../components/StoryPart5/index";
-export function Portifolio() {
+export default function Portifolio() {
   return (
     <div>
       <Header />

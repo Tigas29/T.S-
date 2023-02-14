@@ -1,14 +1,16 @@
+import React, { lazy, Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { FirstContact } from "./pages/firstcontact/index";
-import { Portifolio } from "./pages/portifolio/index";
-
+const Portifolio = lazy(() => import("./pages/portifolio/index"));
+const FirstContact = lazy(() => import("./pages/firstcontact/index"));
 export function Router() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FirstContact />} />
-        <Route path="/home" element={<Portifolio />} />
-      </Routes>
-    </BrowserRouter>
+    <Suspense fallback="Carregando...">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FirstContact />} />
+          <Route path="/home" element={<Portifolio />} />
+        </Routes>
+      </BrowserRouter>
+    </Suspense>
   );
 }
