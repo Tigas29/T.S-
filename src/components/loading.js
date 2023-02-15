@@ -28,7 +28,7 @@ export default function Loading() {
       {loading ? (
         <div className="Icon">
           <FadeLoader
-            color={"#ff55ff"}
+            color={"#682ae9"}
             loading={loading}
             size={150}
             aria-label="Loading Spinner"
