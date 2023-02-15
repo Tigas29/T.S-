@@ -14,7 +14,7 @@ export function Header() {
   }, [path]);
 
   return (
-    <div>
+    <>
       <HeaderContainer isVisible={menuIsVisible}>
         <div className="header">
           <div className="content">
@@ -57,6 +57,6 @@ export function Header() {
           </div>
         </div>
       </HeaderContainer>
-    </div>
+    </>
   );
 }

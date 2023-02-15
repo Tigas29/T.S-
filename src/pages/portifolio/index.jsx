@@ -14,10 +14,6 @@ export default function Portifolio() {
         <ConfigSize>
           <FrontCover />
           <StoryFirstPart />
-          <StorySecondPart />
-          <StoryThirdPart />
-          <StoryFourthPart />
-          <StoryFifthPart />
         </ConfigSize>
       </Container>
     </div>

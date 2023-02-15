@@ -12,12 +12,12 @@ export const Container = styled.div`
     #0c0c0e 98.23%,
     #0c0c0e 100.86%
   );
+  min-height: 400vh;
 `;
 
 export const ConfigSize = styled.div`
   width: 80%;
   max-width: 80rem;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

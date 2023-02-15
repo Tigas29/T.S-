@@ -7,21 +7,29 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 100vh;
+  min-height: 33rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-
+  ${Media.PhoneLarge} {
+    margin-top: 2rem;
+  }
   .Patterns {
     font-family: "Roboto";
     color: #ffffff;
   }
   .mediumTittleFirstPart {
     font-weight: 700;
-    font-size: 35px;
-
+    font-size: 3rem;
+    ${Media.Tablet} {
+      width: 100%;
+      font-size: 2rem;
+    }
+    ${Media.PhoneLarge} {
+      font-size: 1.8rem;
+    }
     .purpleText {
       color: #985eff;
     }
@@ -30,8 +38,14 @@ export const ContainerStory = styled.div`
     margin-top: 1rem;
     width: 80%;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 2rem;
+    ${Media.Tablet} {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    ${Media.PhoneLarge} {
+      font-size: 1.2rem;
+    }
   }
 
   .purpleLine {
@@ -40,6 +54,14 @@ export const ContainerStory = styled.div`
     background: #985eff;
     border: none;
     width: 7px;
-    min-height: 70vh;
+    min-height: 20rem;
+    margin-top: 2rem;
+    ${Media.Tablet} {
+      left: 6rem;
+    }
+    ${Media.PhoneLarge} {
+      margin-top: 1rem;
+      left: 3rem;
+    }
   }
 `;

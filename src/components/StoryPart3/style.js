@@ -7,26 +7,45 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  width: 100%;
-  min-height: 100vh;
+  min-height: 33rem;
   display: flex;
   flex-direction: column;
-  justify-content: CENTER;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  /* width: 100%; */
+  ${Media.PhoneLarge} {
+    margin-top: 2rem;
+  }
   .Patterns {
     font-family: "Roboto";
     color: #ffffff;
   }
-  .purpleText {
-    color: #985eff;
-    font-weight: 700;
-    font-size: 35px;
-  }
   .mediumTittleFirstPart {
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3rem;
+    ${Media.Tablet} {
+      width: 100%;
+      font-size: 2rem;
+    }
+    ${Media.PhoneLarge} {
+      font-size: 1.8rem;
+    }
+    .purpleText {
+      color: #985eff;
+    }
+  }
+  .textFirstPart {
+    margin-top: 1rem;
+    width: 80%;
+    font-weight: 400;
+    font-size: 2rem;
+    ${Media.Tablet} {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+    ${Media.PhoneLarge} {
+      font-size: 1.2rem;
+    }
   }
 
   .purpleLine {
@@ -35,6 +54,12 @@ export const ContainerStory = styled.div`
     background: #985eff;
     border: none;
     width: 7px;
-    min-height: 83vh;
+    min-height: 70vh;
+    margin-top: 2rem;
+
+    ${Media.PhoneLarge} {
+      margin-top: 1rem;
+      left: 3rem;
+    }
   }
 `;
