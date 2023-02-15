@@ -1,17 +1,6 @@
-import { CircleLoader } from "react-awesome-loaders";
-import { useEffect, useState } from "react";
 import styled from "styled-components";
-
-const LOADING = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #393939;
-  position: fixed;
-  z-index: 99999999999999999999999;
-`;
+import { useState, useEffect } from "react";
+import FadeLoader from "react-spinners/FadeLoader";
 
 export default function Loading() {
   const [loading, setLoading] = useState(false);
@@ -19,23 +8,36 @@ export default function Loading() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 500);
   }, []);
+
+  const CONTAINER = styled.div`
+    .Icon {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #393939;
+      position: fixed;
+      z-index: 9999999999999999999999999;
+    }
+  `;
   return (
-    <>
+    <CONTAINER>
       {loading ? (
-        <LOADING>
-          <CircleLoader
-            meshColor={"#985EFF"}
-            lightColor={"#E0E7FF"}
-            duration={1.5}
-            desktopSize={"90px"}
-            mobileSize={"64px"}
+        <div className="Icon">
+          <FadeLoader
+            color={"#ff55ff"}
+            loading={loading}
+            size={150}
+            aria-label="Loading Spinner"
+            data-testid="loader"
           />
-        </LOADING>
+        </div>
       ) : (
         <></>
       )}
-    </>
+    </CONTAINER>
   );
 }
