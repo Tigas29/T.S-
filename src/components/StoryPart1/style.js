@@ -7,7 +7,7 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 33rem;
+  min-height: 43rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,7 @@ export const ContainerStory = styled.div`
     left: 16rem;
     background: #985eff;
     border: none;
-    width: 7px;
+    width: 2px;
     min-height: 20rem;
     margin-top: 2rem;
     ${Media.Tablet} {

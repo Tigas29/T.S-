@@ -14,7 +14,6 @@ export function StoryFirstPart() {
           queriam impulsionar suas vendas através de Marketing e post para redes
           sociais.
         </p>
-        <hr className="purpleLine" />
       </div>
     </ContainerStory>
   );
