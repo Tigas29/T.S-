@@ -8,6 +8,7 @@ export default function Portifolio() {
       <Header />
       <Container>
         <ConfigSize>
+          <hr />
           <FrontCover />
           <StoryFirstPart />
         </ConfigSize>

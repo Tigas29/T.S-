@@ -12,7 +12,16 @@ export const Container = styled.div`
     #0c0c0e 98.23%,
     #0c0c0e 100.86%
   );
-  min-height: 400vh;
+  min-height: 100vh;
+
+  hr {
+    width: 3px;
+    min-height: 72%;
+    position: absolute;
+    background-color: #985eff;
+    left: -1.5rem;
+    top: 27%;
+  }
 `;
 
 export const ConfigSize = styled.div`
