@@ -4,6 +4,7 @@ import React, { lazy, Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 const Portifolio = lazy(() => import("./pages/portifolio/index"));
 const FirstContact = lazy(() => import("./pages/firstcontact/index"));
+const Space = lazy(() => import("./pages/workspace"));
 export function Router() {
   return (
     <Suspense fallback={<Loading />}>
@@ -11,6 +12,7 @@ export function Router() {
         <Routes>
           <Route path="/" element={<FirstContact />} />
           <Route path="/home" element={<Portifolio />} />
+          <Route path="/workspace" element={<Space />} />
         </Routes>
       </BrowserRouter>
     </Suspense>
