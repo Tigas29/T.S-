@@ -13,9 +13,25 @@ export function Header() {
     scrollUp();
   }, [path]);
 
+  const [animation, setAnimation] = useState(false);
+
+  useEffect(() => {
+    const elementOnscroll = document.addEventListener("scroll", function () {
+      if (window.scrollY > 2300) {
+        setAnimation(true);
+      } else {
+        setAnimation(false);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function async() {
+      elementOnscroll();
+    });
+  }, []);
+
   return (
     <>
-      <HeaderContainer isVisible={menuIsVisible}>
+      <HeaderContainer isVisible={menuIsVisible} isanimation={animation}>
         <div className="header">
           <div className="content">
             <div className="logoSide">

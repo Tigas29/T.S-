@@ -15,7 +15,27 @@ export const HeaderContainer = styled.header`
       #0f0f12 26.43%,
       rgba(15, 15, 17, 0) 73.78%
     );
+    transition: all 0.5s linear 0.1s;
+
+    ${({ isanimation }) =>
+      isanimation &&
+      css`
+        background: linear-gradient(
+          180deg,
+          #fff 26.43%,
+          rgba(15, 15, 17, 0) 73.78%
+        );
+        transition: all 0.5s linear 0.1s;
+      `}
     z-index: -2;
+    .logoSide {
+      ${({ isanimation }) =>
+        isanimation &&
+        css`
+          filter: saturate(0);
+          filter: brightness(0);
+        `}
+    }
     .content {
       display: flex;
       align-items: center;
@@ -99,6 +119,12 @@ export const HeaderContainer = styled.header`
           font-weight: 300;
           color: #f0f0f0;
           font-size: 17px;
+          ${({ isanimation }) =>
+            isanimation &&
+            css`
+              font-weight: 400;
+              color: #1e1e1e;
+            `}
           &:hover {
             transition: all 0.2s linear;
             color: #985eff;
@@ -118,6 +144,11 @@ export const HeaderContainer = styled.header`
         .color {
           color: #985eff;
           font-weight: 400;
+          ${({ isanimation }) =>
+            isanimation &&
+            css`
+              color: #1e1e1e;
+            `}
         }
       }
     }

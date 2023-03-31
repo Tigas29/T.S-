@@ -1,15 +1,18 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import FadeLoader from "react-spinners/FadeLoader";
 
 export default function Loading() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const contentRef = useRef(null);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
-      setLoading(false);
+      if (contentRef.current) {
+        setLoading(false);
+      }
     }, 1000);
-  }, []);
+  }, [contentRef]);
 
   const CONTAINER = styled.div`
     .Icon {
@@ -36,7 +39,7 @@ export default function Loading() {
           />
         </div>
       ) : (
-        <></>
+        <div ref={contentRef}></div>
       )}
     </CONTAINER>
   );
