@@ -63,6 +63,12 @@ export const HeaderContainer = styled.header`
               opacity: 0;
               transition: all 0.5s linear 0.1s;
             `}
+
+          ${({ isanimation }) =>
+            isanimation &&
+            css`
+              color: #000;
+            `}
         }
       }
       .closeMenu {
