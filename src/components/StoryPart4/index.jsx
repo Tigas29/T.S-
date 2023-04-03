@@ -13,6 +13,9 @@ export function StoryFourthPart() {
     <ContainerStory>
       <div className="Patterns containerText" data-aos="fade-down">
         <h2 className="mediumTittleFirstPart ">Hoje em dia</h2>
+        <p className="textFirstPart" data-aos="fade-down">
+          Desenvolvedor web em acensão
+        </p>
       </div>
       <img
         className="background"

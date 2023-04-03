@@ -19,7 +19,6 @@ export const ContainerStory = styled.div`
   }
   .Patterns {
     font-family: "Roboto";
-    text-decoration-line: underline;
     color: #1e1e1e;
     opacity: 0.8;
   }
@@ -29,6 +28,7 @@ export const ContainerStory = styled.div`
     ${Media.Tablet} {
       width: 100%;
       font-size: 2rem;
+      text-decoration-line: underline;
     }
     ${Media.PhoneLarge} {
       font-size: 1.8rem;
