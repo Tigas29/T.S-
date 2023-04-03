@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import "animate.css";
+
 import { ContainerStory } from "./style.js";
 export function StoryThirddPart() {
   return (

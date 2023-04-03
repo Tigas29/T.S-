@@ -1,8 +1,26 @@
-import styled, { css } from "styled-components/";
+import styled, { keyframes, css } from "styled-components/";
 const Media = {
   Nav: "@media(max-width:1000px)",
   PhoneLarge: "@media(max-width:600px)",
 };
+
+// const animate = keyframes`
+
+//       0%{
+//       visibility:hidden;
+//       background: linear-gradient(
+//           to bottom,
+//           #d9d9d9 0%,
+//           rgba(15, 15, 17, 0) 73.78%
+//         );};
+
+//     100%{opacity:1; background: linear-gradient(
+//           to bottom,
+//           #d9d9d9 0%,
+//           rgba(15, 15, 17, 0) 73.78%
+//         );}
+
+//   `;
 export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 99;
@@ -15,19 +33,13 @@ export const HeaderContainer = styled.header`
       #0f0f12 26.43%,
       rgba(15, 15, 17, 0) 73.78%
     );
-    transition: all 0.5s linear 0.1s;
+    z-index: 1;
 
     ${({ isanimation }) =>
       isanimation &&
       css`
-        background: linear-gradient(
-          180deg,
-          #fff 26.43%,
-          rgba(15, 15, 17, 0) 73.78%
-        );
-        transition: all 0.5s linear 0.1s;
+        background: inherit;
       `}
-    z-index: -2;
     .logoSide {
       ${({ isanimation }) =>
         isanimation &&
