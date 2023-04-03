@@ -24,7 +24,7 @@ export const Container = styled.div`
     #0c0c0e 100.86%
   );
   z-index: 1;
-
+  overflow-x: hidden;
   /* background-size: 330%; */
   animation: 1.5s linear;
   &::before {

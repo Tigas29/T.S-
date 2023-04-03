@@ -64,4 +64,15 @@ export const ContainerStory = styled.div`
       left: 3rem;
     }
   }
+
+  .background {
+    position: absolute;
+    right: -20%;
+    bottom: 0;
+    max-width: 800px;
+
+    ${Media.PhoneLarge} {
+      right: 0;
+    }
+  }
 `;
