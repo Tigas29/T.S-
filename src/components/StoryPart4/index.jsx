@@ -11,18 +11,15 @@ export function StoryFourthPart() {
   }, []);
   return (
     <ContainerStory>
-      <div className="Patterns containerText" data-aos="fade-down">
-        <h2 className="mediumTittleFirstPart ">Hoje em dia</h2>
-        <p className="textFirstPart" data-aos="fade-down">
-          Desenvolvedor web em acensão
-        </p>
-      </div>
       <img
         className="background"
         src={background}
         alt="background "
         data-aos="fade-down"
       />
+      <div className="Patterns containerText" data-aos="fade-down">
+        <h2 className="mediumTittleFirstPart ">Hoje em dia</h2>
+      </div>
     </ContainerStory>
   );
 }

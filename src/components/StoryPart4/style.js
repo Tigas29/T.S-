@@ -25,10 +25,10 @@ export const ContainerStory = styled.div`
   .mediumTittleFirstPart {
     font-weight: 700;
     font-size: 3rem;
+    text-decoration-line: underline;
     ${Media.Tablet} {
       width: 100%;
       font-size: 2rem;
-      text-decoration-line: underline;
     }
     ${Media.PhoneLarge} {
       font-size: 1.8rem;
@@ -48,27 +48,10 @@ export const ContainerStory = styled.div`
     }
   }
 
-  .purpleLine {
-    position: absolute;
-    left: 16rem;
-    background: #985eff;
-    border: none;
-    width: 2px;
-    min-height: 20rem;
-    margin-top: 2rem;
-    ${Media.Tablet} {
-      left: 6rem;
-    }
-    ${Media.PhoneLarge} {
-      margin-top: 1rem;
-      left: 3rem;
-    }
-  }
-
   .background {
     position: absolute;
     right: -20%;
-    bottom: 0;
+    bottom: 1rem;
     max-width: 800px;
 
     ${Media.PhoneLarge} {

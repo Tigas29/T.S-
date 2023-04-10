@@ -34,7 +34,7 @@ export default function Portifolio() {
           <StorySecondPart />
           <StoryThirddPart />
           <StoryFourthPart />
-          {/* <StoryFifthPart /> */}
+          <StoryFifthPart />
         </ConfigSize>
       </Container>
     </div>

@@ -8,14 +8,18 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 43rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: Column;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
   width: 100%;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  ${Media.Laptop} {
+    gap: 3rem;
+  }
+
   .Patterns {
     font-family: "Roboto";
     color: #1e1e1e;
@@ -52,13 +56,23 @@ export const ContainerStory = styled.div`
     background-position: center;
     background-size: contain;
     flex-wrap: wrap;
+    margin: auto;
+    margin-left: 3rem;
+    ${Media.Laptop} {
+      gap: 3rem;
+      margin-left: inherit;
+    }
 
     .card {
       width: 20rem;
       flex-direction: column;
       align-items: flex-start;
-
+      margin: auto;
       .cardTopPart {
+        ${Media.PhoneLarge} {
+          flex-direction: column;
+          align-items: flex-start;
+        }
         .icon {
           width: 5rem;
           height: 5rem;
@@ -66,6 +80,7 @@ export const ContainerStory = styled.div`
         .text {
           align-items: flex-start;
           gap: 0.5rem;
+
           p,
           h3 {
             font-weight: bold;
@@ -89,16 +104,22 @@ export const ContainerStory = styled.div`
         }
       }
       .textMidPart {
+        ${Media.PhoneLarge} {
+          margin-top: 1rem;
+        }
         .line {
+          ${Media.PhoneLarge} {
+            display: none;
+          }
           p {
-            font-family: "Roboto Mono";
+            font-family: "Roboto";
             font-size: 1.2rem;
             color: #1e1e1e;
           }
           span {
             display: block;
             width: 3px;
-            height: 10rem;
+            min-height: 15rem;
             background: #1e1e1e;
             opacity: 0.3;
           }
