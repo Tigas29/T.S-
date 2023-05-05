@@ -1,5 +1,5 @@
 import { HeaderContainer } from "./style";
-import logo from "../../imgs/Logo.svg";
+import logo from "../../imgs/logo.png";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
