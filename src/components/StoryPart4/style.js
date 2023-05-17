@@ -13,7 +13,6 @@ export const ContainerStory = styled.div`
   justify-content: center;
   position: relative;
   width: 100%;
-  padding-bottom: 10rem;
   align-items: flex-start;
   ${Media.PhoneLarge} {
     margin-top: 2rem;

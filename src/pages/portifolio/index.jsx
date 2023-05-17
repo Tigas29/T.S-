@@ -24,6 +24,17 @@ export default function Portifolio() {
       elementOnscroll();
     });
   }, []);
+  useEffect(() => {
+    const elementOnscroll = document.addEventListener("scroll", function () {
+      if (window.scrollY > 4000) {
+        setAnimation(false);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function async() {
+      elementOnscroll();
+    });
+  }, []);
   return (
     <div>
       <Header />

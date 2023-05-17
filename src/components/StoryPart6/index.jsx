@@ -7,12 +7,14 @@ import "aos/dist/aos.css";
 import arrow from "../../imgs/arrow.png";
 export function StorySixPart() {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
     <ContainerStory>
-      <h3 className="title Patterns">Agora, você tem duas escolhas</h3>
+      <h3 className="title Patterns" data-aos="fade-down">
+        Agora, você tem duas escolhas
+      </h3>
       <div className="container2">
         <div className="emacensão">
           <div className="buttonContainer">

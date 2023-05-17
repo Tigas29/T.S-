@@ -8,7 +8,7 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 30rem;
+  min-height: 100rem;
   display: flex;
   flex-direction: Column;
   justify-content: space-evenly;
@@ -16,13 +16,14 @@ export const ContainerStory = styled.div`
   width: 100%;
   align-items: center;
   gap: 3rem;
+
   ${Media.Laptop} {
     gap: 3rem;
   }
 
   .Patterns {
     font-family: "Roboto";
-    color: #1e1e1e;
+    color: #fff;
     opacity: 0.8;
   }
 
@@ -39,8 +40,6 @@ export const ContainerStory = styled.div`
     flex-direction: column;
   }
   .title {
-    padding-top: 30rem;
-    padding-bottom: 30rem;
     font-weight: 300;
     font-size: 3rem;
     ${Media.Tablet} {
@@ -57,6 +56,8 @@ export const ContainerStory = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    position: absolute;
+    bottom: 0;
   }
   .emacensão {
     display: flex;
@@ -69,6 +70,7 @@ export const ContainerStory = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+
     &:last-child {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);

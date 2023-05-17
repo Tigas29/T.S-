@@ -7,9 +7,7 @@ export function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const path = useLocation().pathname;
   useEffect(() => {
-    function scrollUp() {
-      window.scrollTo(0, 0);
-    }
+    function scrollUp() {}
     scrollUp();
   }, [path]);
 
@@ -20,6 +18,17 @@ export function Header() {
       if (window.scrollY > 2300) {
         setAnimation(true);
       } else {
+        setAnimation(false);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function async() {
+      elementOnscroll();
+    });
+  }, []);
+  useEffect(() => {
+    const elementOnscroll = document.addEventListener("scroll", function () {
+      if (window.scrollY > 4000) {
         setAnimation(false);
       }
     });
