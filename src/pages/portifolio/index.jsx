@@ -15,7 +15,7 @@ export default function Portifolio() {
     const elementOnscroll = document.addEventListener("scroll", function () {
       if (window.scrollY > 2300) {
         setAnimation(true);
-      } else if (window.scrollY > 4000) {
+      } else {
         setAnimation(false);
       }
     });
