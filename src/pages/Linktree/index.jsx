@@ -42,7 +42,7 @@ export default function LinkTree() {
         <ol className="col">
           <li> 💻 Desenvolvedor</li>
           <li> 🎨 Designer</li>
-          <li>🎸 Gosto de tocar instrumentos.</li>
+          <li>🎸 Gosto de tocar instrumentos</li>
         </ol>
         <p>↓ Vem comigo ↓</p>
 
