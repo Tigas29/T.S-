@@ -8,21 +8,21 @@ export default function LinkTree() {
       id: 1,
       href: "https://www.behance.net/tiagosantos67",
       title: "Behance",
-      class: "link col behance",
+      class: "link  behance",
       text: "Site para  trabalhos artísticos",
     },
     {
       id: 2,
       href: "https://github.com/Tigas29",
       title: "Github",
-      class: "link col github",
+      class: "link  github",
       text: "Site para versionamos código de projetos ",
     },
     {
       id: 3,
       href: "http://www.linkedin.com/in/tigass",
       title: "LinkedIn",
-      class: "link col linkedin",
+      class: "link  linkedin",
       text: "Onde mostro o que eu ando fazendo",
     },
   ];
@@ -46,7 +46,7 @@ export default function LinkTree() {
         </ol>
         <p>↓ Vem comigo ↓</p>
 
-        <div className="linksContainer col">
+        <div className="linksContainer ">
           {links.map((item) => (
             <a href={item.href} key={item.id}>
               <div className={item.class}>

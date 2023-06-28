@@ -1,4 +1,11 @@
 import styled from "styled-components";
+
+const Media = {
+  Laptop: "@media(max-width:1220px)",
+  Nav: "@media(max-width:1000px)",
+  Tablet: "@media(max-width:1000px)",
+  PhoneLarge: "@media(max-width:600px)",
+};
 export const Container = styled.main`
   background: linear-gradient(
     136deg,
@@ -46,7 +53,7 @@ export const Container = styled.main`
     margin: auto;
     min-height: 90vh;
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   .introductionContainer {
@@ -74,9 +81,17 @@ export const Container = styled.main`
 
   .linksContainer {
     width: 100%;
-    gap: 0.6rem;
+    gap: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     .link {
-      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 25rem;
       height: 6rem;
       gap: 0.3rem;
       border-radius: 5.787px;
@@ -84,7 +99,9 @@ export const Container = styled.main`
       flex-shrink: 0;
       cursor: pointer;
       transition: all 0.3s;
-
+      ${Media.PhoneLarge} {
+        width: 18rem;
+      }
       h3 {
         color: #fff;
         text-align: center;
@@ -99,8 +116,13 @@ export const Container = styled.main`
         font-size: 1.266rem;
         font-family: Roboto;
         opacity: 0.5;
+
+        ${Media.PhoneLarge} {
+          font-size: 1rem;
+        }
       }
     }
+
     .behance:hover {
       background-color: #053eff;
     }
