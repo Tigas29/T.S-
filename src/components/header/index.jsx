@@ -36,7 +36,7 @@ export function Header() {
     document.addEventListener("DOMContentLoaded", function async() {
       elementOnscroll();
     });
-  }, []);
+  }, []); 
 
   return (
     <>

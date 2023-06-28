@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import background from "../../imgs/handLeft.png";
+import background2 from "../../imgs/handRight.png";
 
 const Media = {
   Laptop: "@media(max-width:1220px)",
@@ -66,25 +67,17 @@ export const ContainerStory = styled.div`
     flex-direction: row;
     width: 50%;
     height: 50vh;
-    background-image: url(${background});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
 
-    &:last-child {
-      -webkit-transform: scaleX(-1);
-      transform: scaleX(-1);
-    }
     .buttonContainer {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       margin-top: -10rem;
-      &:last-child {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
-      }
+
       button {
         background-color: transparent;
         border: 1px solid #8c2e2e;
