@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import background from "../../imgs/handLeft.png";
-import background2 from "../../imgs/handRight.png";
+import background from "../../imgs/handsPhotoMatrix/leftHand.png";
+import background2 from "../../imgs/handsPhotoMatrix/RightHand.png";
 
 const Media = {
   Laptop: "@media(max-width:1220px)",
@@ -9,14 +9,14 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 100rem;
+  padding-top: 20rem;
+  min-height: 100vh;
   display: flex;
   flex-direction: Column;
   justify-content: space-evenly;
   position: relative;
   width: 100%;
   align-items: center;
-  gap: 3rem;
 
   ${Media.Laptop} {
     gap: 3rem;
@@ -55,10 +55,8 @@ export const ContainerStory = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    position: absolute;
-    bottom: 0;
   }
   .emacensão {
     display: flex;
@@ -70,6 +68,7 @@ export const ContainerStory = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+    background-image: url(${background});
 
     .buttonContainer {
       display: flex;
@@ -93,7 +92,21 @@ export const ContainerStory = styled.div`
         cursor: pointer;
         color: #fafafa;
         margin-top: -5rem;
+
+        &:hover {
+          border: 1px solid #8c2e2e;
+          box-shadow: 0px 0px 150px 12px #ff1e3a;
+        }
       }
+    }
+  }
+  .second {
+    background-position: right;
+    background-image: url(${background2}) !important;
+
+    .blue {
+      border: 1px solid #539ef4 !important;
+      box-shadow: 0px 0px 200px 12px #539ef4 !important;
     }
   }
 `;

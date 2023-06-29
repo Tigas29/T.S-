@@ -53,6 +53,7 @@ export const Container = styled.main`
     margin: auto;
     min-height: 90vh;
     gap: 1rem;
+
     padding: 2rem 0;
   }
 

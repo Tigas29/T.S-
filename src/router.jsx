@@ -12,7 +12,7 @@ export function Router() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Links />} />
-          {/* <Route path="/home" element={<Portifolio />} /> */}
+          <Route path="/main" element={<Portifolio />} />
           {/* <Route path="/workspace" element={<Space />} /> */}
         </Routes>
       </BrowserRouter>
