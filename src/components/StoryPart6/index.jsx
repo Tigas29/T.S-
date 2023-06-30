@@ -24,7 +24,9 @@ export function StorySixPart() {
         >
           <div className="buttonContainer row">
             <img src={redArrow} alt="arrow" />
-            <button className="redButton Patterns">Behance</button>
+            <a href="https://github.com/Tigas29" target="_blanked">
+              <button className="redButton Patterns">Projetos</button>
+            </a>
           </div>
         </div>
         <div
@@ -33,7 +35,9 @@ export function StorySixPart() {
           data-aos-delay="500"
         >
           <div className="buttonContainer row">
-            <button className="blueButton Patterns">Projetos</button>
+            <a href="www.linkedin.com/in/tigass" target="_blanked">
+              <button className="blueButton Patterns">Sobre mim</button>
+            </a>
             <img src={blueArrow} alt="arrow" />
           </div>
         </div>

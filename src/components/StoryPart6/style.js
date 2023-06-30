@@ -95,7 +95,7 @@ export const ContainerStory = styled.div`
       flex-direction: column;
       justify-content: space-evenly;
       gap: 3rem;
-      margin-top: -20rem;
+      margin-top: -10rem;
     }
   }
   .OptionContainer {
@@ -126,6 +126,7 @@ export const ContainerStory = styled.div`
           display: none;
         }
       }
+      a,
       button {
         background-color: transparent;
         font-weight: 300;

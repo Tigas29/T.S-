@@ -36,7 +36,7 @@ export function Header() {
     document.addEventListener("DOMContentLoaded", function async() {
       elementOnscroll();
     });
-  }, []); 
+  }, []);
 
   return (
     <>
@@ -58,26 +58,26 @@ export function Header() {
               <Link to="">
                 <ul
                   className={`${
-                    path === "/home" ? " color Options" : "Options"
+                    path === "/main" ? " color Options" : "Options"
                   }`}
                 >
                   console.log("tiagoSantos")
                 </ul>
               </Link>
-              <Link to="">
+              <a href="www.linkedin.com/in/tigasss">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
-                  aboutMe
+                  Sobre mim
                 </ul>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://github.com/Tigas29">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
-                  works
+                  Projetos
                 </ul>
-              </Link>
+              </a>
             </li>
           </div>
         </div>

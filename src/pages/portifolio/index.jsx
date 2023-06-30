@@ -8,6 +8,7 @@ import { StoryFourthPart } from "../../components/StoryPart4/index.jsx";
 import { StoryFifthPart } from "../../components/StoryPart5/index.jsx";
 import { FrontCover } from "../../components/HomeFrontCover/index.jsx";
 import { StorySixPart } from "../../components/StoryPart6/index.jsx";
+import Footer from "../../components/footer/index.jsx";
 export default function Portifolio() {
   const [animation, setAnimation] = useState(false);
 
@@ -48,6 +49,7 @@ export default function Portifolio() {
           <StoryFourthPart />
           <StoryFifthPart />
           <StorySixPart />
+          <Footer />
         </ConfigSize>
       </Container>
     </div>
