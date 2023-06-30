@@ -1,10 +1,16 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 const Media = {
   Laptop: "@media(max-width:1220px)",
   Nav: "@media(max-width:1000px)",
   Tablet: "@media(max-width:1000px)",
   PhoneLarge: "@media(max-width:600px)",
 };
+
+const rotate = keyframes`
+  to {
+    transform: rotate(360deg);
+  }
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -19,7 +25,7 @@ export const Container = styled.div`
     #0c0c0e 100.86%
   );
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   /* background-size: 330%; */
   animation: 1.5s linear;
   &::before {

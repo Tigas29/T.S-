@@ -99,7 +99,6 @@ export const Container = styled.main`
       background: #985eff;
       flex-shrink: 0;
       cursor: pointer;
-      transition: all 0.3s;
       ${Media.PhoneLarge} {
         width: 18rem;
       }
