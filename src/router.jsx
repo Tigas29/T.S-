@@ -11,8 +11,9 @@ export function Router() {
     <Suspense fallback={<Loading />}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Links />} />
-          <Route path="/main" element={<Portifolio />} />
+          <Route path="/links" element={<Links />} />
+          <Route path="/home" element={<Portifolio />} />
+          <Route path="/" element={<FirstContact />} />
           {/* <Route path="/workspace" element={<Space />} /> */}
         </Routes>
       </BrowserRouter>
