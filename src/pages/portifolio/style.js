@@ -5,11 +5,6 @@ const Media = {
   Tablet: "@media(max-width:1000px)",
   PhoneLarge: "@media(max-width:600px)",
 };
-const animate = keyframes`
-      0%{background-position:left};
-    100%{background-position:right}
-  
-  `;
 
 export const Container = styled.div`
   width: 100%;
@@ -25,7 +20,6 @@ export const Container = styled.div`
   );
   z-index: 1;
   overflow-x: hidden;
-  /* background-size: 330%; */
   animation: 1.5s linear;
   &::before {
     position: absolute;
@@ -54,7 +48,7 @@ export const Container = styled.div`
         background: linear-gradient(
           157.27deg,
           #ffffff 0%,
-          #ededed 30.81%,
+          #ffffff 30.81%,
           #ffffff 53.58%,
           #e1e1e1 70.36%,
           #d9d9d9 98.61%

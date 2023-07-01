@@ -6,7 +6,7 @@ export function StorySecondPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart ">
-          Foram mais de mais de
+          Foram mais de
           <span className="purpleText"> 50 artes </span> feitas para engajar
           clientes.
         </h2>

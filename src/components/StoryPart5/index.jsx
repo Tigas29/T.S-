@@ -18,6 +18,8 @@ export function StoryFifthPart() {
       titleSecondary: "React Js Javascript",
       text: "Como desenvolvedor JavaScript que utiliza React, tenho habilidades sólidas em HTML, CSS e JavaScript que me permitem criar experiências de usuário interativas no front-end. No back-end, estou usando PHP e tenho a capacidade de gerenciar dados e infraestrutura do servidor.",
       id: 1,
+      data: "fade-right",
+      delay: "300",
     },
     {
       icons: <MdOutlineDesignServices className="icon" />,
@@ -25,16 +27,24 @@ export function StoryFifthPart() {
       titleSecondary: "Figma,Photoshop",
       text: "Como designer e web designer, possuo habilidades sólidas em várias áreas de design, incluindo UX e UI. Sou experiente em trabalhar com ferramentas como Photoshop, Figma e Canvas para criar protótipos de design de alta qualidade.",
       id: 2,
+      data: "fade-left",
+      delay: "800",
     },
   ];
   return (
     <ContainerStory>
-      <h3 className="title Patterns">Desenvolvedor web em acensão</h3>
+      <h3 className="title Patterns" data-aos="fade-down">
+        Desenvolvedor web em acensão
+      </h3>
       <div className="cardContainer rowTable">
         {cards.map((item) => (
-          <div className="card columnTable" key={item.id}>
+          <div
+            className="card columnTable"
+            key={item.id}
+            data-aos={item.data}
+            data-aos-delay={item.delay}
+          >
             <div className="cardTopPart rowTable">
-              {/* <div>{item.icons}</div> */}
               {item.icons}
               <div className="text columnTable">
                 <p className="Patterns">{item.title}</p>

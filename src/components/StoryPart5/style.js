@@ -8,18 +8,21 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-  min-height: 30rem;
+  min-height: 44rem;
   display: flex;
   flex-direction: Column;
   justify-content: space-evenly;
   position: relative;
   width: 100%;
   align-items: center;
-  gap: 3rem;
+  padding-top: 20rem;
   ${Media.Laptop} {
     gap: 3rem;
   }
 
+  ${Media.PhoneLarge} {
+    padding-top: inherit;
+  }
   .Patterns {
     font-family: "Roboto";
     color: #1e1e1e;

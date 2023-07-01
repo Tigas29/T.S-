@@ -7,12 +7,13 @@ import { StoryThirddPart } from "../../components/StoryPart3/index.jsx";
 import { StoryFourthPart } from "../../components/StoryPart4/index.jsx";
 import { StoryFifthPart } from "../../components/StoryPart5/index.jsx";
 import { FrontCover } from "../../components/HomeFrontCover/index.jsx";
+import { StorySixthPart } from "../../components/StoryPart6/index.jsx";
 export default function Portifolio() {
   const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
     const elementOnscroll = document.addEventListener("scroll", function () {
-      if (window.scrollY > 2300) {
+      if (window.scrollY > 2200) {
         setAnimation(true);
       } else {
         setAnimation(false);
@@ -35,6 +36,7 @@ export default function Portifolio() {
           <StoryThirddPart />
           <StoryFourthPart />
           <StoryFifthPart />
+          <StorySixthPart />
         </ConfigSize>
       </Container>
     </div>

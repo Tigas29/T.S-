@@ -51,7 +51,7 @@ export const ContainerStory = styled.div`
   .background {
     position: absolute;
     right: -20%;
-    bottom: 1rem;
+    bottom: 20%;
     max-width: 800px;
 
     ${Media.PhoneLarge} {
