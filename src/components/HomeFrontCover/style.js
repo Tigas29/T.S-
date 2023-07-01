@@ -81,7 +81,6 @@ export const Cover = styled.div`
     text-align: center;
     margin: auto;
     animation: ${Down} 3s infinite, cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    animation-delay: 1s;
     cursor: pointer;
     ${Media.PhoneLarge} {
       margin-top: -2.9rem;

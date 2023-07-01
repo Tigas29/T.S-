@@ -14,7 +14,7 @@ export default function FirstContact() {
           className="background"
           scene="https://prod.spline.design/DgWDTJH6-HdI215B/scene.splinecode"
         />
-        <div class="animate__animated animate__bounceInRight animate__delay-2s">
+        <div class="animate__animated animate__bounceInRight">
           <div className="containerTextAcessibilty">
             <p className="textAcessibility">Ainda não carregou ?</p>
             <Link to="/home">

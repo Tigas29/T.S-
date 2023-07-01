@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 const Media = {
   Laptop: "@media(max-width:1220px)",
   Nav: "@media(max-width:1000px)",
@@ -19,7 +19,7 @@ export const Container = styled.div`
     #0c0c0e 100.86%
   );
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   animation: 1.5s linear;
   &::before {
     position: absolute;

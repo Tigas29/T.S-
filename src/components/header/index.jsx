@@ -7,9 +7,7 @@ export function Header() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const path = useLocation().pathname;
   useEffect(() => {
-    function scrollUp() {
-      window.scrollTo(0, 0);
-    }
+    function scrollUp() {}
     scrollUp();
   }, [path]);
 
@@ -20,6 +18,17 @@ export function Header() {
       if (window.scrollY > 2300) {
         setAnimation(true);
       } else {
+        setAnimation(false);
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", function async() {
+      elementOnscroll();
+    });
+  }, []);
+  useEffect(() => {
+    const elementOnscroll = document.addEventListener("scroll", function () {
+      if (window.scrollY > 4000) {
         setAnimation(false);
       }
     });
@@ -49,26 +58,26 @@ export function Header() {
               <Link to="">
                 <ul
                   className={`${
-                    path === "/home" ? " color Options" : "Options"
+                    path === "/main" ? " color Options" : "Options"
                   }`}
                 >
                   console.log("tiagoSantos")
                 </ul>
               </Link>
-              <Link to="">
+              <a href="www.linkedin.com/in/tigasss">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
-                  aboutMe
+                  Sobre mim
                 </ul>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://github.com/Tigas29">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
-                  works
+                  Projetos
                 </ul>
-              </Link>
+              </a>
             </li>
           </div>
         </div>

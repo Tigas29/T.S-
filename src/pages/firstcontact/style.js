@@ -20,6 +20,12 @@ export const Container = styled.div`
     position: absolute;
     bottom: 50px;
     right: 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 999999999999999999999;
 
     .textAcessibility {
       font-family: "Roboto";
