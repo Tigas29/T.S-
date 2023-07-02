@@ -22,7 +22,7 @@ export function FrontCover() {
             </h1>
 
             <h2 class="animate__animated animate__fadeInLeft animate__delay-2s ">
-              Web developer
+              Desenvolvedor Front End (quase pleno)
             </h2>
           </div>
           <div className="socialMediasIconsLink">

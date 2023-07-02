@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import styled from "styled-components";
-import background from "../../imgs/backgroundChoices.png";
-
-=======
 import styled, { keyframes } from "styled-components";
 import background from "../../imgs/handsPhotoMatrix/leftHand.png";
 import background2 from "../../imgs/handsPhotoMatrix/RightHand.png";
@@ -45,7 +40,6 @@ const breathingBlue = keyframes`
   
   }
 `;
->>>>>>> 024125e42d192ec56a0037e02710cb7e1dde343a
 const Media = {
   Laptop: "@media(max-width:1220px)",
   Nav: "@media(max-width:1000px)",
@@ -53,28 +47,6 @@ const Media = {
   PhoneLarge: "@media(max-width:600px)",
 };
 export const ContainerStory = styled.div`
-<<<<<<< HEAD
-  min-height: 30rem;
-  display: flex;
-  flex-direction: Column;
-  justify-content: space-evenly;
-  position: relative;
-  width: 100%;
-  align-items: center;
-  gap: 3rem;
-  padding-top: 10rem;
-  ${Media.Laptop} {
-    gap: 3rem;
-  }
-
-  .Patterns {
-    font-family: "Roboto";
-    color: #1e1e1e;
-    opacity: 0.8;
-  }
-
-  .rowTable {
-=======
   padding-top: 20rem;
   min-height: 100vh;
   display: flex;
@@ -94,17 +66,13 @@ export const ContainerStory = styled.div`
   }
 
   .row {
->>>>>>> 024125e42d192ec56a0037e02710cb7e1dde343a
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
   }
-<<<<<<< HEAD
-  .columnTable {
-=======
+
   .col {
->>>>>>> 024125e42d192ec56a0037e02710cb7e1dde343a
     display: flex;
     align-items: center;
     justify-content: center;
@@ -113,10 +81,6 @@ export const ContainerStory = styled.div`
   .title {
     font-weight: 300;
     font-size: 3rem;
-<<<<<<< HEAD
-    text-align: center;
-=======
->>>>>>> 024125e42d192ec56a0037e02710cb7e1dde343a
     ${Media.Tablet} {
       width: 100%;
       font-size: 2rem;
@@ -124,43 +88,6 @@ export const ContainerStory = styled.div`
     ${Media.PhoneLarge} {
       font-size: 1.8rem;
     }
-<<<<<<< HEAD
-
-    .relative {
-      position: relative;
-      width: 125%;
-      height: 37rem;
-    }
-  }
-  .contianerOptions {
-    background-image: url(${background});
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    height: 50vh;
-    width: 125%;
-    .buttonContainer {
-      top: 10rem;
-      left: 30%;
-      flex-direction: row-reverse;
-      align-items: flex-start;
-      position: absolute;
-      &:last-child {
-        left: inherit;
-        right: 30%;
-      }
-
-      .icon {
-        width: 5rem;
-        height: 5rem;
-        color: red;
-        margin-top: 2rem;
-      }
-      button {
-        background: red;
-        padding: 1rem;
-=======
   }
   .handsContainer {
     width: 100%;
@@ -249,7 +176,6 @@ export const ContainerStory = styled.div`
       &:hover {
         animation: ${breathingBlue} 3s linear infinite;
         transition: all 0.3s;
->>>>>>> 024125e42d192ec56a0037e02710cb7e1dde343a
       }
     }
   }
