@@ -64,7 +64,7 @@ export function Header() {
                   console.log("tiagoSantos")
                 </ul>
               </Link>
-              <a href="www.linkedin.com/in/tigasss">
+              <a href="https://www.linkedin.com/in/tiagosantos-dev/">
                 <ul
                   className={`${path === "/" ? " color Options" : "Options"}`}
                 >
