@@ -36,7 +36,10 @@ export function StorySixPart() {
           data-aos-delay="500"
         >
           <div className="buttonContainer row">
-            <a href="www.linkedin.com/in/tigass" target="_blanked">
+            <a
+              href="https://www.linkedin.com/in/tiagosantos-dev/"
+              target="_blanked"
+            >
               <button className="blueButton Patterns">Sobre mim</button>
             </a>
             <img src={blueArrow} alt="arrow" />
