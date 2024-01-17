@@ -12,8 +12,8 @@ export function Router() {
       <BrowserRouter>
         <Routes>
           <Route path="/links" element={<Links />} />
-          <Route path="/home" element={<Portifolio />} />
-          <Route path="/" element={<FirstContact />} />
+          <Route path="/" element={<Portifolio />} />
+          <Route path="/home" element={<FirstContact />} />
           {/* <Route path="/workspace" element={<Space />} /> */}
         </Routes>
       </BrowserRouter>
