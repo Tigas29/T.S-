@@ -6,7 +6,7 @@ export function StoryThirddPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart ">
-          Trabalhar com várias coisas me ajudou
+          Trabalhar em diversas áreas me ajudou
           <br />
           <span className="purpleText">Mas...</span>
         </h2>
