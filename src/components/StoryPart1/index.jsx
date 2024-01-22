@@ -12,8 +12,9 @@ export function StoryFirstPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart " data-aos="fade-down">
-          Desde de 2020, trabalhei com a internet ao meu favor
-          <span className="purpleText"> de forma autônoma. </span>
+          Trabalhando a mais de 4 anos <br />
+          com a internet de
+          <span className="purpleText"> forma autônoma. </span>
         </h2>
         <p className="textFirstPart" data-aos="fade-down">
           Cooperava com empresas que possuíam apenas comércios onlines e queriam

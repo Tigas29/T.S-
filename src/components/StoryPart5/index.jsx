@@ -34,8 +34,12 @@ export function StoryFifthPart() {
   return (
     <ContainerStory>
       <h3 className="title Patterns" data-aos="fade-down">
-        Desenvolvedor web em acensão
+        Desenvolvedor em acensão
       </h3>
+      <p className="Patterns" data-aos="fade-down">
+        Decidi concentrar minha carreira e aplicar meus conhecimentos de outras
+        áreas para ampliar minha expertise no desenvolvimento para web.
+      </p>
       <div className="cardContainer rowTable">
         {cards.map((item) => (
           <div

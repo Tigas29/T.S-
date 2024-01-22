@@ -1,7 +1,7 @@
 import { Cover } from "./style";
 // import { Link } from "react-router-dom";
 import "animate.css";
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from "react-simple-typewriter";
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -13,7 +13,6 @@ export function FrontCover() {
     window.scrollTo(0, 1000);
   }
 
-
   return (
     <>
       <Cover>
@@ -24,15 +23,19 @@ export function FrontCover() {
             </h1>
 
             <h2 class="animate__animated animate__fadeInLeft animate__delay-2s ">
-              Desenvolvedor <Typewriter
-            words={['Web', 'Front - End']}
-            loop={5}
-            cursor
-            cursorStyle='_'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
+              <Typewriter
+                words={[
+                  "Desenvolvedor Front - End",
+                  "Web Designer",
+                  "Pragmático",
+                ]}
+                loop={5}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </h2>
           </div>
           <div className="socialMediasIconsLink">

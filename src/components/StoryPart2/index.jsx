@@ -6,9 +6,10 @@ export function StorySecondPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart ">
-          Foram mais de
-          <span className="purpleText"> 50 artes </span> feitas para engajar
-          clientes.
+          <span className="purpleText">
+            Web Design , Páginas de alta conversão e Landing Pages{" "}
+          </span>
+          pensadas para cada objetivo e para cada negocio
         </h2>
       </div>
     </ContainerStory>

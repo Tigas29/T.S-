@@ -6,9 +6,9 @@ export function StoryThirddPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart ">
-          Eu ainda trabalho com isso.
+          Trabalhar com várias coisas me ajudou
           <br />
-          <span className="purpleText"> Mas.... </span>
+          <span className="purpleText">Mas...</span>
         </h2>
       </div>
     </ContainerStory>
