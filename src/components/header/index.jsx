@@ -14,29 +14,40 @@ export function Header() {
   const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
-    const elementOnscroll = document.addEventListener("scroll", function () {
-      if (window.scrollY > 2300) {
-        setAnimation(true);
-      } else {
-        setAnimation(false);
-      }
-    });
+    if (path === "/") {
+      // Verifica se está na página inicial
+      const handleScroll = () => {
+        if (window.scrollY > 2300 && window.scrollY <= 4000) {
+          setAnimation(true);
+        } else {
+          setAnimation(false);
+        }
+      };
 
-    document.addEventListener("DOMContentLoaded", function async() {
-      elementOnscroll();
-    });
-  }, []);
+      document.addEventListener("scroll", handleScroll);
+
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [path]);
+
   useEffect(() => {
-    const elementOnscroll = document.addEventListener("scroll", function () {
-      if (window.scrollY > 4000) {
-        setAnimation(false);
-      }
-    });
+    if (path === "/") {
+      // Verifica se está na página inicial
+      const handleScroll = () => {
+        if (window.scrollY > 4000) {
+          setAnimation(false);
+        }
+      };
 
-    document.addEventListener("DOMContentLoaded", function async() {
-      elementOnscroll();
-    });
-  }, []);
+      document.addEventListener("scroll", handleScroll);
+
+      return () => {
+        document.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [path]);
 
   return (
     <>
@@ -44,7 +55,9 @@ export function Header() {
         <div className="header">
           <div className="content">
             <div className="logoSide">
-              <img src={logo} alt="logotipo" />
+              <Link to="/">
+                <img src={logo} alt="logotipo" />
+              </Link>
             </div>
             <AiOutlineMenu
               onClick={() => setMenuIsVisible(true)}
@@ -55,11 +68,9 @@ export function Header() {
               className="menu closeMenu"
             />
             <li className="menuSide">
-              <Link to="">
+              <Link to="/">
                 <ul
-                  className={`${
-                    path === "/main" ? " color Options" : "Options"
-                  }`}
+                  className={`${path === "/" ? " color Options" : "Options"}`}
                 >
                   console.log("tiagoSantos")
                 </ul>
