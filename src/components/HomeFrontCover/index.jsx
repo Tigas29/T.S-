@@ -22,11 +22,13 @@ export function FrontCover() {
               Tiago Santos
             </h1>
 
-            <h2 class="animate__animated animate__fadeInLeft animate__delay-2s ">
+            <h2 class="animate__animated animate__fadeInLeft animate__delay-1s ">
               <Typewriter
                 words={[
-                  "Desenvolvedor Front - End",
-                  "Web Designer",
+                  ".......",
+                  "Marketing para médicos",
+                  "Product Manager",
+                  "Scrum Master",
                   "Pragmático",
                 ]}
                 loop={5}

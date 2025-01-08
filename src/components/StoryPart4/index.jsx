@@ -11,14 +11,21 @@ export function StoryFourthPart() {
   }, []);
   return (
     <ContainerStory>
-      <img
+      {/* <img
         className="background"
         src={background}
         alt="background "
         data-aos="fade-down"
-      />
+      /> */}
       <div className="Patterns containerText" data-aos="fade-down">
-        <h2 className="mediumTittleFirstPart ">Hoje em dia</h2>
+        <h2 className="mediumTittleFirstPart ">
+          Hoje em dia, ajudo médicos a<br />
+          <span className="purpleText">construir seu legado.</span>
+        </h2>
+        <p className="textFirstPart">
+          Seja o médico que define seu futuro, atrai pacientes certos e alcança
+          resultados extraordinários.
+        </p>
       </div>
     </ContainerStory>
   );

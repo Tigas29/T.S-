@@ -4,8 +4,9 @@ import { ContainerStory } from "./style.js";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { DiReact } from "react-icons/di";
+import { FaUserTie } from "react-icons/fa"; // Ícone para Autonomia Profissional
+import { GiTargetArrows } from "react-icons/gi"; // Ícone para Presença de Alto Impacto
+
 export function StoryFifthPart() {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -13,32 +14,33 @@ export function StoryFifthPart() {
 
   const cards = [
     {
-      icons: <DiReact className="icon" />,
-      title: "Front end Developer",
-      titleSecondary: "React Js Javascript",
-      text: "Como desenvolvedor JavaScript que utiliza React, tenho habilidades sólidas em HTML, CSS e JavaScript que me permitem criar experiências de usuário interativas no front-end. No back-end, estou usando PHP e tenho a capacidade de gerenciar dados e infraestrutura do servidor.",
+      icons: <FaUserTie className="icon" />, // Ícone atualizado
+      title: "Autonomia Profissional",
+      titleSecondary: "Controle e Liberdade",
+      text: "Conquiste independência total na sua prática médica. Atraia pacientes particulares, controle seu crescimento e elimine a dependência de convênios.",
       id: 1,
       data: "fade-right",
       delay: "300",
     },
     {
-      icons: <MdOutlineDesignServices className="icon" />,
-      title: "Design",
-      titleSecondary: "Figma,Photoshop",
-      text: "Como designer e web designer, possuo habilidades sólidas em várias áreas de design, incluindo UX e UI. Sou experiente em trabalhar com ferramentas como Photoshop, Figma e Canvas para criar protótipos de design de alta qualidade.",
+      icons: <GiTargetArrows className="icon" />, // Ícone atualizado
+      title: "Presença de Alto Impacto",
+      titleSecondary: "Marketing e Branding",
+      text: "Destaque-se no mercado médico com estratégias de marketing que transformam sua marca em referência, atraindo pacientes que valorizam excelência.",
       id: 2,
       data: "fade-left",
       delay: "800",
     },
   ];
+
   return (
     <ContainerStory>
       <h3 className="title Patterns" data-aos="fade-down">
-        Desenvolvedor em acensão
+        Seu Próximo Passo
       </h3>
       <p className="Patterns" data-aos="fade-down">
-        Decidi concentrar minha carreira e aplicar meus conhecimentos de outras
-        áreas para ampliar minha expertise no desenvolvimento para web.
+        Descubra como alcançar o reconhecimento e o sucesso que sua prática
+        médica merece.
       </p>
       <div className="cardContainer rowTable">
         {cards.map((item) => (
@@ -57,9 +59,9 @@ export function StoryFifthPart() {
             </div>
             <div className="textMidPart rowTable">
               <div className="line columnTable">
-                <p className="Patterns"> &lt;h3&gt;</p>
+                <p className="Patterns"> &lt;&gt;</p>
                 <span className="Patterns" />
-                <p className="Patterns"> &lt;/h3&gt;</p>
+                <p className="Patterns">&lt;&gt;</p>
               </div>
               <p>{item.text}</p>
             </div>

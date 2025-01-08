@@ -12,13 +12,15 @@ export function StoryFirstPart() {
     <ContainerStory>
       <div className="Patterns containerText">
         <h2 className="mediumTittleFirstPart " data-aos="fade-down">
-          Trabalhando a mais de 4 anos <br />
-          com a internet de
-          <span className="purpleText"> forma autônoma. </span>
+          Com mais de 4 anos ajudando médicos a expandirem suas práticas,
+          <br />
+          construindo presença digital de
+          <span className="purpleText"> forma estratégica. </span>
         </h2>
         <p className="textFirstPart" data-aos="fade-down">
-          Cooperava com empresas que possuíam apenas comércios onlines e queriam
-          impulsionar suas vendas através do Marketing.
+          Auxiliei profissionais da saúde a atrair pacientes particulares e
+          alcançar independência, utilizando estratégias personalizadas de
+          marketing e branding.
         </p>
       </div>
     </ContainerStory>
